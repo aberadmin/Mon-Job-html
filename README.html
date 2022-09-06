@@ -1,0 +1,90 @@
+
+<html lang="fr">
+<head>
+    <title>Hello World</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_test.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+    
+</head>
+<body>
+
+    <h1> Je suis le titre</h1>
+    <hr />
+	
+
+ <form method="post" action = "">
+
+	<fieldset>
+			<legend> Qui êtes vous ? </legend>
+       <p> <input type="text" tabindex="1"  name="pseudo" placeholder="Pseudo" required /> </p>
+       <p> <input type="password" tabindex="2" name="pass" placeholder="Password" / required > </p>
+       <p> <input type="number" tabindex="3" name="age" placeholder="Age" /> </p>
+	   <p> <input type="tel" tabindex="4" placeholder="Tél" pattern "[0-9]{10}" />  </p>
+	    
+		<input type="hidden" name="verif" value="1" />    	   
+        
+	</fieldset>
+	
+	<input type="submit" tabindex="4" value="Validez" />
+	<input type="reset" tabindex="4" value="Reset" />
+	
+ </form>
+	
+	<fieldset disabled>
+	<legend> Pourquoi faire ? </legend>
+	
+	<p> <textarea> </textarea> </p>
+	
+	</fieldset>
+	
+	<input type="submit" tabindex="4" value="Validez" />
+	<input type="reset" tabindex="4" value="Reset" />
+	
+ </form>
+	
+	<hr>
+	
+	<p> * Commentaire  </p>
+	
+	<hr>
+	  
+   <form method="post" action = "">	  
+	   <label for "couleur"> Couleur </label>
+	   <input value="#99E5A8" type="color" id="couleur" />
+	   
+  </form>	
+  
+  <hr>
+	  
+	  <form method="post" action = "">
+	  
+   <form method="post" action = "">	  
+	   <label for "Volume"> Volume </label>
+	   <input type="range" id="volume" />
+	   
+  </form>	
+  
+ <hr>
+ 
+ <form>
+ 
+   <fieldset>
+			<legend> Formulaire de recherche </legend>
+			
+ <label for "chercher"> Recherche </label>
+	   <input type= "search" id="chercher" list="Environnement" />
+	   
+	   <datalist id="Environnement">
+					<option value="Production"> </option>
+					<option value="Staging"> </option>
+					<option value="Dev"> </option>
+	   </datalist>
+	</fieldset>
+	   <input type= "submit" value="chercher" />
+
+</form>
+</body>
+    
+</html>
